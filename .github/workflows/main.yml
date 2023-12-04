@@ -8,8 +8,11 @@ on:
     - cron:  '0 1 * * 2'
 
 jobs:
-
   semgrep-full:
+      permissions:
+        security-events: write
+        contents: read
+        actions: read
       runs-on: ubuntu-latest
       container:
         image: returntocorp/semgrep
