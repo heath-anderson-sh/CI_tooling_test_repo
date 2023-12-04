@@ -27,7 +27,7 @@ jobs:
         - name: full scan
           run: |
             semgrep \
-              --sarif --output report.sarif \
+              --sarif --output semgrep.sarif \
               --metrics=off \
               --config="p/default"
 
