@@ -36,8 +36,8 @@ jobs:
         - name: save report as pipeline artifact
           uses: actions/upload-artifact@v3
           with:
-            name: report.sarif
-            path: report.sarif
+            name: semgrep.sarif
+            path: semgrep.sarif
             
         # step 4
         - name: Upload SARIF file
